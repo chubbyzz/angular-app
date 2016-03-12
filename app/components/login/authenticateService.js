@@ -2,13 +2,13 @@ angular
     .module('app')
     .service('authenticateService', authenticateService);
 
-authenticateService.$inject = ['$http'];
+authenticateService.$inject = ['$http', 'baseUrl'];
 
-function authenticateService($http) {
+function authenticateService($http, baseUrl) {
     return {
         login: login
     };
     function login(user) {
-        return $http.post('/login', {user: user});
+        return $http.get(baseUrl + 'login', {user: user});
     }
 }
