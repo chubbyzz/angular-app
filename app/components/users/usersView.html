@@ -1,5 +1,8 @@
 <md-content ng-controller="User as user">
-    <section ng-include="'/app/components/users/formView.html'"></section>
+    <!--<section ng-include="'/app/components/users/formView.html'"></section>-->
+    <app-display display="user.showForm">
+        <section ng-include="'/app/components/users/formView.html'"></section>
+    </app-display>
     <md-list flex="" id="user-list" ng-cloak>
         <md-subheader class="md-no-sticky">
             <section layout>

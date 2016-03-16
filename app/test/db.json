@@ -6,7 +6,6 @@
     {
       "id": 2,
       "email": "qetexote-2555@yopmail.com",
-      "password": "BXWH2NVCUH",
       "first_name": "Johannes",
       "last_name": "Harri"
     },
@@ -51,6 +50,17 @@
       "password": "GBVW5DZRTG",
       "first_name": "Patton",
       "last_name": "Nikolay"
+    },
+    {
+      "id": 10,
+      "first_name": "dasdasd",
+      "last_name": "dasdasd"
+    },
+    {
+      "id": 11,
+      "email": "a@a.com",
+      "first_name": "jeff",
+      "last_name": "rossi"
     }
   ]
 }
