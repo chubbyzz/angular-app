@@ -22,6 +22,20 @@ function User(userFactory, $mdDialog) {
     vm.showSaveForm = showSaveForm;
     vm.edit = edit;
     vm.confirm = confirm;
+    vm.actions = [
+        {
+            method: show,
+            type: "primary",
+            label : "EDITAR",
+            icon: 'pencil'
+        },
+        {
+            method: confirm,
+            type: "danger",
+            label : "REMOVER",
+            icon: 'delete-variant'
+        },
+    ];
 
     vm.refresh();
 

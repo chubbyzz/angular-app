@@ -20,22 +20,7 @@
         </md-list>
         <md-list-item class="md-3-line" ng-repeat="record in user.records | filter:user.filter">
             <div class="md-list-item-text" layout="column">
-                <div layout="row" layout-padding>
-                    <div flex="fill">
-                        <h3>{{ record.email }}</h3>
-                        <p>{{ record.first_name + " " +record.last_name}}</p>
-                    </div>
-                    <div>
-                         <span>
-                             <md-button ng-click="user.show(record.email)" class="md-fab md-mini md-primary" aria-label="EDITAR" >
-                                 <md-icon md-svg-icon="pencil"></md-icon>
-                             </md-button>
-                             <md-button ng-click="user.confirm($event, record.id)" class="md-fab md-mini md-danger" aria-label="REMOVER">
-                                 <md-icon md-svg-icon="delete-variant"></md-icon>
-                             </md-button>
-                        </span>
-                    </div>
-                </div>
+                <app-list-item record="record" actions="user.actions"></app-list-item>
             </div>
         </md-list-item>
         <md-divider></md-divider>
