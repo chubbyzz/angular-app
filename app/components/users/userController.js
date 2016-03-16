@@ -27,13 +27,15 @@ function User(userFactory, $mdDialog) {
             method: show,
             type: "primary",
             label : "EDITAR",
-            icon: 'pencil'
+            icon: 'pencil',
+            param: "email"
         },
         {
             method: confirm,
             type: "danger",
             label : "REMOVER",
-            icon: 'delete-variant'
+            icon: 'delete-variant',
+            param: "id"
         },
     ];
 
@@ -89,12 +91,11 @@ function User(userFactory, $mdDialog) {
         }
     }
 
-    function confirm(ev, id) {
+    function confirm(id) {
         var confirm = $mdDialog.confirm()
             .title('Would you like to delete your debt?')
             .textContent('All of the banks have agreed to forgive you your debts.')
             .ariaLabel('Lucky day')
-            .targetEvent(ev)
             .ok('SIM!')
             .cancel('NÃO!');
         $mdDialog.show(confirm).then(remove);
