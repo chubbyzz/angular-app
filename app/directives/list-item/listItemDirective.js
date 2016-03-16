@@ -7,7 +7,7 @@ angular
 function AppListItem() {
     var directive = {
         restrict: "E",
-        templateUrl: "/app/shared/list-item/listItemView.html",
+        templateUrl: "/app/directives/list-item/listItemView.html",
         scope: {
             record : "=",
             actions : "="

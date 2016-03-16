@@ -7,7 +7,7 @@ angular
 function AppDisplay() {
     var directive = {
         restrict: "E",
-        templateUrl: "/app/shared/display/displayView.html",
+        templateUrl: "/app/directives/display/displayView.html",
         scope: {
             display: "=",
             afterShow: "=",
