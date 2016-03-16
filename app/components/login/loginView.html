@@ -1,0 +1,24 @@
+<div layout="column" layout-align="space-around" ng-controller="Login as login">
+    <md-content layout>
+        <span flex="10"></span>
+        <div layout="row" flex="80" layout-margin layout padding>
+            <div flex="25"></div>
+            <div flex="50" layout="column">
+                <form layout="column">
+                    <h3><md-icon class="big-icon teal-icon" md-svg-src="account-circle"></md-icon> Entrar</h3>
+                    <md-input-container>
+                        <label>E-mail</label>
+                        <input type="email" ng-model='login.user.email'/>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Senha</label>
+                        <input type="password" ng-model='login.user.password' />
+                    </md-input-container>
+                    <div layout layout-align="end" layout-padding>
+                        <md-button class="md-raised" ng-click="login.login()">LOGIN</md-button>
+                    </div>
+                </from>
+            </div>
+        </div>
+    </md-content>
+</div>
